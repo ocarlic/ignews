@@ -42,6 +42,13 @@ export default function Posts({ posts }) {
   );
 }
 
+export const getStaticPaths = () => {
+  return {
+    paths: [],
+    fallback: 'blocking'
+  }
+}
+
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient()
 
