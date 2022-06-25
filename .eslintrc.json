@@ -1,6 +1,15 @@
 {
   "extends": "next/core-web-vitals",
   "import/no-anonymous-default-export": ["error", {
-    "allowCallExpression": true
+      // React components:
+      "allowArrowFunction": false,
+      "allowAnonymousClass": false,
+      "allowAnonymousFunction": false,
+
+      // Non-React stuff:
+      "allowArray": true,
+      "allowCallExpression": true,
+      "allowLiteral": true,
+      "allowObject": true
   }]
 }
